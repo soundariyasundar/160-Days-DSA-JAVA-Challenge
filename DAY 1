@@ -1,4 +1,4 @@
-// Second Largest Number in array 
+// Second Largest Number in array //
 class Solution {
     public static int getSecondLargest(int[] arr)
     {
