@@ -1,1 +1,22 @@
-dsjcksjd
+class Solution {
+    public int longestSubarray(int[] arr, int k) {
+        int max = 0;
+        for(int i =0;i<arr.length;i++){
+            int currsum = 0;
+            for(int j =i;j<arr.length;j++)
+            {
+                currsum += arr[j];
+                if(currsum == k)
+                {
+                    int currlen = j-i+1;
+                    if(currlen > max)
+                    {
+                        max = currlen;
+                    }
+                }
+            }
+        }
+        return max;
+    }
+}
+
