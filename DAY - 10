@@ -1,5 +1,5 @@
 class Solution {
-    int maxSubarraySum(int[] arr) {
+    int maxSubarraysum(int[] arr) {
         int maxarr = arr[0];
         int currsum = arr[0];
         for(int i =1;i<arr.length;i++)
